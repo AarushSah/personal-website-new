@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import CommandPalette from "@/components/CommandPalette";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aarushsah.com"),
@@ -15,6 +17,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const posts = getAllPosts().map((p) => ({ title: p.title, slug: p.slug }));
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -31,6 +35,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <ThemeProvider>
+          <CommandPalette posts={posts} />
           <div className="mx-auto max-w-[620px] px-6 pt-8 pb-16 md:px-0 md:pt-12 md:pb-24">
             <Navigation />
             <main>{children}</main>

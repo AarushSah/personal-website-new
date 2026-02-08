@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import CosmereTracker from "@/components/CosmereTracker";
 
 export const metadata: Metadata = {
   title: "Bookshelf — Aarush Sah",
@@ -12,7 +11,7 @@ type Book = {
 };
 
 const currentlyReading: Book = {
-  title: "Words of Radiance",
+  title: "Isles of the Emberdark",
   author: "Brandon Sanderson",
 };
 
@@ -108,13 +107,8 @@ export default function Bookshelf() {
         press into someone&apos;s hands.
       </p>
 
-      {/* Cosmere Progress */}
-      <section className="mb-16 fade-up fade-up-2">
-        <CosmereTracker />
-      </section>
-
       {/* Currently Reading */}
-      <section className="mb-14 fade-up fade-up-3">
+      <section className="mb-14 fade-up fade-up-2">
         <p className="text-faint text-sm uppercase tracking-wider mb-3">
           Currently reading
         </p>

@@ -65,18 +65,18 @@ export default function Home() {
           >
             Meta Superintelligence Labs
           </a>
-          , where I focus on evals, reinforcement learning, and infrastructure.
+          .
         </p>
 
         <p>
-          Before Meta, I was at NVIDIA after{" "}
+          Before MSL, I was at NVIDIA working on &lt;redacted&gt; after{" "}
           <a
             href="https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale"
             target="_blank"
             rel="noopener noreferrer"
             className="text-fg border-b border-border hover:border-fg transition-colors duration-300"
           >
-            Groq and NVIDIA struck a deal
+            Groq licensed its inference technology to NVIDIA
           </a>
           . At Groq, I led the Evals team and built{" "}
           <a
@@ -116,7 +116,7 @@ export default function Home() {
           className="text-muted hover:text-fg transition-colors duration-300"
           style={{ fontStyle: "italic" }}
         >
-          Words of Radiance
+          Isles of the Emberdark
         </Link>{" "}
         <span className="text-faint">by Brandon Sanderson</span>
       </p>

@@ -51,13 +51,7 @@ export default function Work() {
                 Feb 2026 &ndash; Present
               </span>
             </div>
-            <p className="text-muted text-sm mb-3">Software Engineer</p>
-            <p className="text-muted leading-relaxed">
-              Working on evaluation systems and reinforcement learning
-              infrastructure for Meta&apos;s superintelligence effort.
-              Building the measurement and training systems that help
-              us understand what our models can and can&apos;t do.
-            </p>
+            <p className="text-muted text-sm">Software Engineer</p>
           </article>
 
           {/* NVIDIA */}
