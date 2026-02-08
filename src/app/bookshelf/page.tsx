@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CosmereTracker from "@/components/CosmereTracker";
 
 export const metadata: Metadata = {
   title: "Bookshelf — Aarush Sah",
@@ -107,8 +108,13 @@ export default function Bookshelf() {
         press into someone&apos;s hands.
       </p>
 
+      {/* Cosmere Progress */}
+      <section className="mb-16 fade-up fade-up-2">
+        <CosmereTracker />
+      </section>
+
       {/* Currently Reading */}
-      <section className="mb-14 fade-up fade-up-2">
+      <section className="mb-14 fade-up fade-up-3">
         <p className="text-faint text-sm uppercase tracking-wider mb-3">
           Currently reading
         </p>
@@ -121,7 +127,7 @@ export default function Bookshelf() {
       </section>
 
       {/* Fiction */}
-      <section className="mb-14 fade-up fade-up-3">
+      <section className="mb-14 fade-up fade-up-4">
         <h2
           className="text-xl mb-6"
           style={{
@@ -139,7 +145,7 @@ export default function Bookshelf() {
       </section>
 
       {/* Non-Fiction */}
-      <section className="fade-up fade-up-4">
+      <section className="fade-up fade-up-5">
         <h2
           className="text-xl mb-6"
           style={{
