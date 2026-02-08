@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aarushsah.com"),
   title: "Aarush Sah",
   description:
     "AI engineer at Meta Superintelligence Labs. Evals, RL, and infrastructure.",

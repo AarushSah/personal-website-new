@@ -36,12 +36,108 @@ export default function Work() {
         Work
       </h1>
 
-      {/* Projects */}
+      {/* Experience */}
       <section className="mb-20 fade-up fade-up-2">
-        <div className="space-y-12">
+        <div className="space-y-14">
+          {/* Meta */}
+          <article>
+            <div className="flex items-baseline justify-between gap-4 mb-2">
+              <h3 className="font-medium">
+                <ExtLink href="https://www.meta.com/superintelligence/">
+                  Meta Superintelligence Labs
+                </ExtLink>
+              </h3>
+              <span className="text-faint text-sm shrink-0">
+                Feb 2026 &ndash; Present
+              </span>
+            </div>
+            <p className="text-muted text-sm mb-3">Software Engineer</p>
+            <p className="text-muted leading-relaxed">
+              Working on evaluation systems and reinforcement learning
+              infrastructure for Meta&apos;s superintelligence effort.
+              Building the measurement and training systems that help
+              us understand what our models can and can&apos;t do.
+            </p>
+          </article>
+
+          {/* NVIDIA */}
+          <article>
+            <div className="flex items-baseline justify-between gap-4 mb-2">
+              <h3 className="font-medium">NVIDIA</h3>
+              <span className="text-faint text-sm shrink-0">
+                2025 &ndash; 2026
+              </span>
+            </div>
+            <p className="text-muted text-sm mb-3">Evals Lead</p>
+            <p className="text-muted leading-relaxed">
+              Joined after the{" "}
+              <ExtLink href="https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale">
+                Groq&ndash;NVIDIA partnership
+              </ExtLink>
+              . Worked on inference and evaluation systems at the intersection
+              of hardware and model performance.
+            </p>
+          </article>
+
+          {/* Groq */}
+          <article>
+            <div className="flex items-baseline justify-between gap-4 mb-2">
+              <h3 className="font-medium">
+                <ExtLink href="https://groq.com">Groq</ExtLink>
+              </h3>
+              <span className="text-faint text-sm shrink-0">
+                2024 &ndash; 2025
+              </span>
+            </div>
+            <p className="text-muted text-sm mb-3">Head of Evals</p>
+            <p className="text-muted leading-relaxed">
+              Led the Evals team. Built{" "}
+              <span className="text-fg font-medium">openbench</span>, an
+              open-source standard for running evals easily, reliably, and in a
+              reproducible manner. Designed evaluation infrastructure that
+              standardized benchmarking across 20+ evaluation suites and became
+              the backbone of Groq&apos;s model quality process.
+            </p>
+          </article>
+
+          {/* Nous */}
+          <article>
+            <div className="flex items-baseline justify-between gap-4 mb-2">
+              <h3 className="font-medium">
+                <ExtLink href="https://nousresearch.com">
+                  Nous Research
+                </ExtLink>
+              </h3>
+              <span className="text-faint text-sm shrink-0">
+                2023 &ndash; 2024
+              </span>
+            </div>
+            <p className="text-muted text-sm mb-3">Researcher in Residence</p>
+            <p className="text-muted leading-relaxed">
+              Developed synthetic data pipelines for training language models.
+              Built systems that generated high-quality training data at scale,
+              contributing to Nous&apos;s open-source model releases.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section className="mb-20 fade-up fade-up-3">
+        <h2
+          className="text-2xl tracking-tight mb-10"
+          style={{
+            fontFamily: "'Instrument Serif', serif",
+            fontWeight: 400,
+          }}
+        >
+          Projects
+        </h2>
+
+        <div className="space-y-10">
           <article>
             <div className="flex items-baseline justify-between gap-4">
-              <h3 className="text-lg font-medium">openbench</h3>
+              <h3 className="font-medium">openbench</h3>
               <time className="text-faint text-sm shrink-0">2025</time>
             </div>
             <p className="text-muted mt-2 leading-relaxed">
@@ -58,7 +154,7 @@ export default function Work() {
 
           <article>
             <div className="flex items-baseline justify-between gap-4">
-              <h3 className="text-lg font-medium">Eris</h3>
+              <h3 className="font-medium">Eris</h3>
               <time className="text-faint text-sm shrink-0">2024</time>
             </div>
             <p className="text-muted mt-2 leading-relaxed">
@@ -73,7 +169,7 @@ export default function Work() {
 
           <article>
             <div className="flex items-baseline justify-between gap-4">
-              <h3 className="text-lg font-medium">Set-Eval</h3>
+              <h3 className="font-medium">Set-Eval</h3>
               <time className="text-faint text-sm shrink-0">2024</time>
             </div>
             <p className="text-muted mt-2 leading-relaxed">
@@ -89,7 +185,7 @@ export default function Work() {
       </section>
 
       {/* Speaking */}
-      <section className="fade-up fade-up-3">
+      <section className="fade-up fade-up-4">
         <h2
           className="text-2xl tracking-tight mb-10"
           style={{

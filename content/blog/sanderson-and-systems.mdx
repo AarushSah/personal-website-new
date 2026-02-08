@@ -1,0 +1,29 @@
+---
+title: "What Sanderson taught me about systems thinking"
+date: "2025-04-22"
+description: "Epic fantasy and software engineering have more in common than you'd think."
+---
+
+I read a lot of Brandon Sanderson. If you're not familiar, he writes epic fantasy novels — the kind with intricate magic systems, sprawling worlds, and thousands of pages of interconnected narrative. The Stormlight Archive is his magnum opus and it's one of the most ambitious things I've ever encountered in any medium.
+
+But this isn't a book review. This is about what building magic systems and building software systems have in common.
+
+## Hard magic systems
+
+Sanderson is famous for his "laws of magic," the first of which states: *an author's ability to solve problems with magic is directly proportional to how well the reader understands said magic.* In other words, magic should have rules. If you want your characters to use magic in satisfying ways, the reader needs to understand the constraints.
+
+This is exactly how good software works. The best systems are the ones where the constraints are clear and explicit. You understand what the system *can't* do, which makes what it *can* do feel reliable and intentional. When I design eval infrastructure, I think about this a lot — what are the hard rules? What's the contract? Where are the boundaries?
+
+## Composability
+
+The Cosmere — Sanderson's shared universe — is built on composable magic systems. Each world has its own magic, but they all derive from the same underlying mechanics. You can combine them. They interact in predictable ways once you understand the fundamentals.
+
+Good software architecture works the same way. You build small, well-defined pieces that compose. Unix pipes. React components. Evaluation suites that plug into standardized runners. The magic is in the composability, not in any individual piece.
+
+## The long game
+
+Sanderson has been building toward a single narrative payoff for over fifteen years and millions of words. He writes consistently, publishes reliably, and never sacrifices the long-term plan for short-term spectacle.
+
+There's something to be said for that kind of patience in engineering. Not every problem needs to be solved this sprint. Some of the best infrastructure decisions are the ones that pay off three years later. The boring, reliable, well-documented choice that compounds over time.
+
+I think about this when people ask why I care so much about eval reproducibility. It's not exciting. It doesn't make for a good tweet. But it compounds.

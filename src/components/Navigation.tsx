@@ -10,7 +10,9 @@ export default function Navigation() {
 
   const linkClass = (path: string) =>
     `transition-opacity duration-200 ${
-      pathname === path ? "opacity-100" : "opacity-40 hover:opacity-70"
+      pathname === path || pathname.startsWith(path + "/")
+        ? "opacity-100"
+        : "opacity-60 hover:opacity-90"
     }`;
 
   return (
@@ -26,16 +28,22 @@ export default function Navigation() {
       >
         AS
       </Link>
-      <div className="flex items-baseline gap-5 text-muted" style={{ fontSize: "0.8rem", letterSpacing: "0.04em" }}>
+      <div
+        className="flex items-baseline gap-5 text-muted"
+        style={{ fontSize: "0.8rem", letterSpacing: "0.04em" }}
+      >
         <Link href="/work" className={linkClass("/work")}>
           Work
         </Link>
-        <Link href="/about" className={linkClass("/about")}>
-          About
+        <Link href="/blog" className={linkClass("/blog")}>
+          Blog
+        </Link>
+        <Link href="/bookshelf" className={linkClass("/bookshelf")}>
+          Bookshelf
         </Link>
         <button
           onClick={toggle}
-          className="opacity-30 hover:opacity-60 transition-opacity duration-200 cursor-pointer bg-transparent border-none text-muted"
+          className="opacity-50 hover:opacity-80 transition-opacity duration-200 cursor-pointer bg-transparent border-none text-muted"
           style={{ fontSize: "0.8rem", letterSpacing: "0.04em" }}
           aria-label="Toggle theme"
         >

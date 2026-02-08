@@ -1,0 +1,33 @@
+---
+title: "Why evals are harder than training"
+date: "2025-06-15"
+description: "Training a model is optimization. Evaluating one is philosophy."
+---
+
+There's a common misconception in the AI industry that evaluation is the easy part. You train the model — that's the hard, expensive, GPU-intensive work — and then you evaluate it, which is just running some benchmarks. Right?
+
+Wrong. Completely wrong.
+
+Training a model is, at its core, an optimization problem. You have a loss function, you have data, you have compute. The path forward is clear even when the details are brutal. Evaluation is a *measurement* problem, and measurement problems are fundamentally harder because they require you to decide what matters before you can measure it.
+
+## The measurement problem
+
+When you evaluate a language model, you're implicitly encoding a theory of intelligence. Every benchmark is a claim about what matters. MMLU says factual knowledge matters. HumanEval says code generation matters. Each of these is a *choice*, and most of the time, nobody is explicit about why they made it.
+
+The result is that we end up optimizing for benchmarks rather than capabilities. Models get better at MMLU without necessarily getting better at the things MMLU was supposed to proxy for. This is Goodhart's Law playing out at industry scale.
+
+## Reproducibility
+
+The other thing nobody talks about: most eval results aren't reproducible. Different prompt templates, different sampling parameters, different versions of the same benchmark — all of these produce different numbers. And when your model's performance varies by 5 points depending on whether you put a newline at the end of your prompt, you have to ask yourself what you're actually measuring.
+
+This is why we built openbench. Not because the world needed another eval framework, but because it needed eval infrastructure that treats reproducibility as a first-class concern.
+
+## What I've learned
+
+After spending the last few years focused almost entirely on evaluation, here's what I believe:
+
+1. **Evals should be boring.** The infrastructure should be so reliable and standardized that you never think about it. You should be thinking about *what* to measure, not *how* to run the measurement.
+
+2. **Benchmarks expire.** Every benchmark has a shelf life. When models saturate it, you need a new one. The field needs to get comfortable with this.
+
+3. **The best eval is one you haven't thought of yet.** If you're only running standard benchmarks, you're only seeing what everyone else sees. The interesting signal is in the evals nobody has written.
