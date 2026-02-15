@@ -140,9 +140,13 @@ export default function Work() {
               suites.
             </p>
             <div className="flex gap-4 mt-3 text-sm text-muted">
-              <ExtLink href="#">Announcement</ExtLink>
-              <ExtLink href="#">GitHub</ExtLink>
-              <ExtLink href="#">Tweet</ExtLink>
+              <ExtLink href="https://groq.com/blog/openbench-open-reproducible-evals">
+                Announcement
+              </ExtLink>
+              <ExtLink href="https://github.com/groq/openbench">GitHub</ExtLink>
+              <ExtLink href="https://x.com/aarush/status/1950981177315360852">
+                Tweet
+              </ExtLink>
             </div>
           </article>
 
@@ -156,8 +160,12 @@ export default function Work() {
               models&apos; reasoning and communication skills.
             </p>
             <div className="flex gap-4 mt-3 text-sm text-muted">
-              <ExtLink href="#">Announcement</ExtLink>
-              <ExtLink href="#">Code</ExtLink>
+              <ExtLink href="https://wandb.ai/aarushsah-personal/eris/reports/Introducing-Eris-v0-1-A-novel-LLM-evaluation-framework-using-debate-simulations--Vmlldzo4NTAxMjU0">
+                Announcement
+              </ExtLink>
+              <ExtLink href="https://github.com/aarushsah/eris-eval">
+                Code
+              </ExtLink>
             </div>
           </article>
 
@@ -171,8 +179,10 @@ export default function Work() {
               reasoning in AI models.
             </p>
             <div className="flex gap-4 mt-3 text-sm text-muted">
-              <ExtLink href="#">Details</ExtLink>
-              <ExtLink href="#">Code</ExtLink>
+              <ExtLink href="https://x.com/aarush/status/1811399930084548827">
+                Details
+              </ExtLink>
+              <ExtLink href="https://github.com/AarushSah/Set_Eval">Code</ExtLink>
             </div>
           </article>
         </div>

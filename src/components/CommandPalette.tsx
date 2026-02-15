@@ -74,10 +74,10 @@ export default function CommandPalette({ posts }: { posts: BlogPost[] }) {
     {
       id: "github",
       label: "GitHub",
-      hint: "github.com/AarushSah",
+      hint: "github.com/aarushsah",
       section: "Links",
       perform: () => {
-        window.open("https://github.com/AarushSah", "_blank");
+        window.open("https://github.com/aarushsah", "_blank");
         setOpen(false);
       },
     },

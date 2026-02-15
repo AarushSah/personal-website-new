@@ -35,7 +35,7 @@ export default function Home() {
               X
             </a>
             <a
-              href="https://github.com/AarushSah"
+              href="https://github.com/aarushsah"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-fg transition-colors duration-300"
@@ -80,7 +80,9 @@ export default function Home() {
           </a>
           . At Groq, I led the Evals team and built{" "}
           <a
-            href="#"
+            href="https://groq.com/blog/openbench-open-reproducible-evals"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-fg border-b border-border hover:border-fg transition-colors duration-300"
           >
             openbench
